@@ -1,0 +1,16 @@
+{# aqui cargamos el template que se repite con extends y los block body #}
+{% extends "todo/base.html" %}
+
+{% block body %}
+    
+    <h1>LISTA DE TABLAS</h1>
+
+    {% for x in tareas %}
+
+    <p>{{ x }}</p>
+
+    {% endfor %}
+
+    <a href="{% url 'addlist' %}">agregar tarea</a>
+
+{% endblock %}
