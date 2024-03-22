@@ -1,0 +1,1 @@
+# Uso de context desde views.py para enviar información al frontend y utilizarlo en las plantillas
