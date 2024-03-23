@@ -1,0 +1,58 @@
+{% extends "generador/tx.html" %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-4 d-flex justify-content-center p-5 flex-column">
+            <h1 class="text-center">Generador de Contraseñas</h1>
+
+            <form action="{% url 'contra' %}">
+                <label for="length"></label>
+                <select class="form-select" name="length" aria-label="Default select example">
+                    <option selected disabled>Cantidad de caracteres</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                </select>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+                        name="uppercase">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Mayusculas</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+                        name="numbers">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Numeros</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+                        name="special">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Simbolos</label>
+                </div>
+
+                <button type="submit" class="btn btn-dark">Generar Contraseña</button>
+            </form>
+        </div>
+    </div>
+</div>
+<form>
+    <label for="hola">sdadsasd</label>
+    <select name="hola" id="hola">
+        <option value="1">1</option>
+        <option value="2">2</option>
+    </select>
+    <button>golasdokads</button>
+</form>
+
+
+{% endblock %}
