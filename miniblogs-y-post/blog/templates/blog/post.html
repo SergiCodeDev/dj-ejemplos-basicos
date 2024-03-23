@@ -1,0 +1,23 @@
+<h1>blog</h1>
+
+{% for post in posts %}
+
+<h2>{{post.titulo}}</h2>
+<p>{{post.descripcion}}</p>
+<img src="{{post.imagen.url}}" alt="">
+<p>{{post.fecha|date:"d/m/y"|upper}}</p>
+<p>{#{post.fecha|date:"M d y"|upper}#}</p>
+
+{# safe las etiquetas html escritas en texto las pone, no son texto si mas #}
+{#post.descripcion|safe|truncatechars:100#}
+
+{# striptags elimina las etiquetas html que esten en texto #}
+{#post.descripcion|striptags|truncatechars:100#}
+
+
+
+<p>{{post.descripcion|truncatechars:100}}</p>
+<a href='{% url "posts:postid" post.id %}'>{{post.titulo}}</a>
+
+{% endfor %}
+

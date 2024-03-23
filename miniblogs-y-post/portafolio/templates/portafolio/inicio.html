@@ -1,0 +1,16 @@
+
+<h1>HOLA</h1>
+
+{% for project in projects %}
+
+<h2>{{project.titulo}}</h2>
+<p>{{project.descripcion}}</p>
+<img src="{{project.imagen.url}}" alt="{{project.titulo}}">
+
+{% if project.url %}
+<a href="{{project.url}}">Enlace</a>
+{% endif %}
+
+<p>{{ project.fecha_creacion|date:"d/m/Y" }}</p>
+
+{% endfor %}
