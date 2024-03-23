@@ -1,4 +1,4 @@
-# Django-ejemplos-basicos
+# Django-ejemplos-básicos
 
 ## Aquí se subirán pequeños prototipos para su aprendizaje.
 
