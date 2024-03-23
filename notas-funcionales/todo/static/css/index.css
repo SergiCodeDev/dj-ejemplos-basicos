@@ -1,0 +1,21 @@
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .navbar-toggler:hover,
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+  }
+
+
+  .offcanvas.offcanvas-start {
+    border-right: 0 solid black !important;
+  }
+  
+  td, th {
+    vertical-align:middle;
+  }

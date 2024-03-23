@@ -1,0 +1,14 @@
+{% extends 'todo/plantilla.html' %}
+
+{% block content %}
+<div class="container text-center">
+   <form method="post">
+      {% csrf_token %}
+      <div class="mb-3">
+         {{form}}
+      </div>
+      <button type="submit" class="btn btn-primary">Añadir</button>
+    </form>
+</div>
+
+{% endblock %}
